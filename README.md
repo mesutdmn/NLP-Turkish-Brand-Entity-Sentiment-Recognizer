@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ```
 
 ## Model ve Tokenizer'ı İndirme
-800mb model boyutu github limitleri olan 100mb değerini aştığı için googledrive yüklenmiştir.
+model boyutu github limitleri olan 100mb değerini aştığı için googledrive yüklenmiştir.
 Eğitilmiş model ve tokenizer'ı aşağıdaki Google Drive linkinden indiriniz ve `app.py` ile aynı dizine yerleştiriniz:
 
 [Model ve Tokenizer'ı İndir](https://drive.google.com/drive/folders/1u6J98lXvI-iXySYQgAZ053B8V3jPPILN?usp=sharing)
