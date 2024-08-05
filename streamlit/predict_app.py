@@ -18,7 +18,7 @@ with open("./streamlit/style/style.css", "r") as style:
 left, middle, right = st.columns([1,1.5,1])
 main, comps , result = middle.tabs([" ", " ", " "])
 with main:
-    example = st.text_area(label='Metin Kutusu: ').strip().replace("\n", " ").replace("\"", " ").replace("'"," ")
+    example = st.text_area(label='Metin Kutusu: ').strip().replace("\n", " ").replace("\""," ")
 
     if st.button("Predict"):
         try:
