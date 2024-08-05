@@ -48,9 +48,10 @@ def predict_fonk(model, device, example, tokenizer):
     results_list = []
     entity_list = []
     results_dict = {}
-    for i, (token, label, attention) in enumerate(zip(predict_loader.dataset[0]["text"], predictions[0].tolist(),
-                                       predict_attention_masks[0])):
-        if attention != 0 and label != 0 and label !=4 and token not in [sep for sepx in entity_list for sep in sepx.split()]:
+    trio = zip(predict_loader.dataset[0]["text"], predictions[0].tolist(), predict_attention_masks[0])
+    
+    for i, (token, label, attention) in enumerate(trio):
+        if attention != 0 and label != 0 and label !=4:
             for next_ones in predictions[0].tolist()[i+1:]:
                 i+=1
                 if next_ones == 4:
@@ -67,14 +68,16 @@ def predict_fonk(model, device, example, tokenizer):
 
     return results_dict
 
+model = TransformerEncoder()
+model = load_model_to_cpu(model, "model.pth")
+tokenizer = Tokenizer.from_file("tokenizer.json")
+
 class Item(BaseModel):
     text: str = Field(..., example="""Fiber 100mb SuperOnline kullanıcısıyım yaklaşık 2 haftadır @Twitch @Kick_Turkey gibi canlı yayın platformlarında 360p yayın izlerken donmalar yaşıyoruz.  Başka hiç bir operatörler bu sorunu yaşamazken ben parasını verip alamadığım hizmeti neden ödeyeyim ? @Turkcell """)
 
 @app.post("/predict/", response_model=dict)
 async def predict(item: Item):
-    model = TransformerEncoder()
-    model, start_epoch = load_model_to_cpu(model, "model.pth")
-    tokenizer = Tokenizer.from_file("tokenizer.json")
+
 
     predict_list = predict_fonk(model=model, device=device, example=item.text, tokenizer=tokenizer)
 
