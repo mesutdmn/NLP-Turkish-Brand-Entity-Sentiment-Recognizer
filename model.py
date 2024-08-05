@@ -145,6 +145,5 @@ class TransformerEncoder(nn.Module):
 
 def load_model_to_cpu(model, path="model.pth"):
     checkpoint = torch.load(path, map_location=torch.device('cpu'))
-    model.load_state_dict(checkpoint['model_state_dict'])
-    epoch = checkpoint['epoch']
-    return model, epoch
+    model.load_state_dict(checkpoint)
+    return model
