@@ -80,3 +80,7 @@ Bu proje Apache 2.0 Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICE
 <a target="_blank" href="https://medium.com/@dumanmesut"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></img></a>
 
 ---
+## 📺 Sunum
+
+https://github.com/user-attachments/assets/5dcbee63-8fa4-4a56-8631-e7a987a054c3
+
