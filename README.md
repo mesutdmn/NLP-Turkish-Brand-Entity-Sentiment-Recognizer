@@ -58,6 +58,9 @@ Veri ve Tokenizer train/data dizininde paylaşılmıştır, yeniden eğitim yapm
 
 Bu proje Apache 2.0 Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
 
+## Veri Kaynakları
+https://huggingface.co/datasets/kmkarakaya/turkishReviews-ds
+https://tr.wikipedia.org/
 
 ## 👨‍👩‍👧‍👦We Bears Team Members 
 
