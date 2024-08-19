@@ -1,44 +1,44 @@
-#### 2024 Teknofest, Türkçe Doğal Dil İşleme Yarışması Doğal Dil İşleme Senaryosu.
-#### Bu proje Teknofest **Acıkhack2024TDDİ** yarışması için hazırlanmıştır.
+#### 2024 Teknofest, Turkish Natural Language Processing Competition Natural Language Processing Scenario.
+#### This project was prepared for the Teknofest **Acıkhack2024TDDİ** competition.
 ---
-## FastAPI ile Model Entegrasyonu
+## Model Integration with FastAPI
 
-Bu proje, PyTorch ile eğitilmiş bir modeli FastAPI kullanarak web tabanlı bir uygulamada sunmayı amaçlamaktadır.
-Aynı zamanda, bu streamlit linkinden deploy edilmiş modeli test edebilirsiniz: [Streamlit](https://huggingface.co/spaces/We-Bears/Turkish-NER-Sentiment-Streamlit)
+This project aims to deploy a model trained with PyTorch in a web-based application using FastAPI.
+Additionally, you can test the deployed model using this Streamlit link: [Streamlit](https://huggingface.co/spaces/We-Bears/Turkish-NER-Sentiment-Streamlit)
 
-## Kurulum
+## Setup
 
-Öncelikle, gerekli bağımlılıkları yükleyin:
+First, install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Model ve Tokenizer'ı İndirme
-model boyutu github limitleri olan 100mb değerini aştığı için googledrive yüklenmiştir.
-Eğitilmiş model ve tokenizer'ı aşağıdaki Google Drive linkinden indiriniz ve `app.py` ile aynı dizine yerleştiriniz:
+## Downloading the Model and Tokenizer
+Since the model size exceeds GitHub's 100MB limit, it has been uploaded to Google Drive.
+Download the trained model and tokenizer from the Google Drive link below and place them in the same directory as `app.py`:
 
-[Model ve Tokenizer'ı İndir](https://drive.google.com/drive/folders/1u6J98lXvI-iXySYQgAZ053B8V3jPPILN?usp=sharing)
+[Download the Model and Tokenizer](https://drive.google.com/drive/folders/1u6J98lXvI-iXySYQgAZ053B8V3jPPILN?usp=sharing)
 
-## Uygulamayı Çalıştırma
+## Running the Application
 
-Aşağıdaki komutu kullanarak FastAPI uygulamanızı başlatın:
+Start your FastAPI application using the command below:
 
 ```bash
 python app.py
 ```
 
-## Swagger Arayüzü
+## Swagger Interface
 
-FastAPI tarafından sunulan Swagger arayüzüne erişmek için tarayıcınızda şu adresi ziyaret edin:
+To access the Swagger interface provided by FastAPI, visit the following address in your browser:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
-Bu arayüz üzerinden API'nizi test edebilir ve dokümantasyona erişebilirsiniz.
+Through this interface, you can test your API and access the documentation.
 
-## Proje Yapısı
+## Project Structure
 
 ```plaintext
 .
@@ -50,16 +50,17 @@ Bu arayüz üzerinden API'nizi test edebilir ve dokümantasyona erişebilirsiniz
 └── README.md         
 ```
 
-## Yeniden Eğitim
+## Retraining
 
-Veri ve Tokenizer train/data dizininde paylaşılmıştır, yeniden eğitim yapmak için train dizinindeki train.ipynb notebook dosyasındaki adımlar izlenebilir, eğitim tamamlandığında model çıktısı verecektir.
+Data and Tokenizer are shared in the `train/data` directory. To retrain the model, follow the steps in the `train.ipynb` notebook located in the `train` directory. Once training is complete, the model will output the results.
 
-## Lisans
+## License
 
-Bu proje Apache 2.0 Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
+This project is licensed under the Apache 2.0 License. For more information, see the LICENSE file.
 
-## Veri Kaynakları
+## Data Sources
 https://huggingface.co/datasets/kmkarakaya/turkishReviews-ds
+
 https://tr.wikipedia.org/
 
 ## 👨‍👩‍👧‍👦We Bears Team Members 
@@ -83,7 +84,7 @@ https://tr.wikipedia.org/
 <a target="_blank" href="https://medium.com/@dumanmesut"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></img></a>
 
 ---
-## 📺 Sunum
+## 📺 Presentation
 
 https://github.com/user-attachments/assets/5dcbee63-8fa4-4a56-8631-e7a987a054c3
 
