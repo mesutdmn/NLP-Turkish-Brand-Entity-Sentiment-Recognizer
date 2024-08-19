@@ -4,7 +4,7 @@
 ## FastAPI ile Model Entegrasyonu
 
 Bu proje, PyTorch ile eğitilmiş bir modeli FastAPI kullanarak web tabanlı bir uygulamada sunmayı amaçlamaktadır.
-Aynı zamanda, bu streamlit linkinden deploy edilmiş modeli test edebilirsiniz: [Streamlit](https://teknofestnlpmodel.streamlit.app/)
+Aynı zamanda, bu streamlit linkinden deploy edilmiş modeli test edebilirsiniz: [Streamlit](https://huggingface.co/spaces/We-Bears/Turkish-NER-Sentiment-Streamlit)
 
 ## Kurulum
 
