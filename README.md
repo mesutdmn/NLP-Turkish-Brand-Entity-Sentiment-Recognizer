@@ -84,7 +84,9 @@ https://tr.wikipedia.org/
 <a target="_blank" href="https://medium.com/@dumanmesut"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"></img></a>
 
 ---
-## 📺 Presentation
+### 📺 Demo Video
 
-https://github.com/user-attachments/assets/5dcbee63-8fa4-4a56-8631-e7a987a054c3
+https://github.com/user-attachments/assets/89d7ff5e-4b96-4220-8bc0-fc4f6d6a1d4f
+
+
 
